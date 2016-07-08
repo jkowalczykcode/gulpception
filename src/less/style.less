@@ -1,0 +1,158 @@
+.margin8() {
+  margin: 8px;
+}
+
+#content {
+  top: 4em;
+  position: relative;
+  .margin8();
+  span {
+    display: block;
+  } 
+  
+}
+
+#scrolltome {
+  position: relative;
+  .margin8();
+  top: 1200px; 
+  div.blue-div {
+    background: #2aabd2;
+  }
+}
+.img-actor-container {
+  height: 150px;
+  img {
+    position: absolute;
+  }
+}
+#player {
+  position: absolute;
+  margin-left: 0px;
+}
+.grow { 
+  transition: all .2s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.wait {
+  cursor: wait;
+}
+#actors, #nolan {
+  display: none;
+}
+ #inception {
+  display: block;
+ }
+
+::selection  {
+  background: #0E00B6;
+  color: #fff;
+}
+#movie-title {
+  color: #CD1F29;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@keyframes redToYellow {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+.opacity0 {
+  opacity: 0;
+}
+.opacity1 {
+  opacity: 1;
+}
+.fade-out {
+    animation-name: fadeOut;
+    animation-duration: 4s;
+}
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+body > nav, body > section {
+  display: none;
+}
+body.pg-loaded > nav,
+body.pg-loaded > section {
+  display: block;
+}
+
+
+.animation-delay(@time) {
+   animation-delay: @time; 
+}
+
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  margin: 25px auto;
+
+  .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #333;
+    float: left;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+  }
+  .sk-cube1 {
+    .animation-delay(0.2s);
+  }
+  .sk-cube2 {
+    .animation-delay(0.3s);
+  }
+  .sk-cube3 {
+    .animation-delay(0.4s);
+  }
+  .sk-cube4 {
+    .animation-delay(0.1s);
+  }
+  .sk-cube5 {
+    .animation-delay(0.2s);
+  }
+  .sk-cube6 {
+    .animation-delay(0.3s);
+  }
+  .sk-cube7 {
+    .animation-delay(0s);
+  }
+  .sk-cube8 {
+    .animation-delay(0.1s);
+  }
+  .sk-cube9 {
+    .animation-delay(0.2s);
+  }
+} 
+
+.transform-scale3D(@x, @y, @z) {
+  transform: scale3D(@x, @y, @z);
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    .transform-scale3D(1, 1, 1);
+  } 35% {
+    .transform-scale3D(0, 0, 1);
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    .transform-scale3D(1, 1, 1);
+  } 35% {
+    .transform-scale3D(0, 0, 1);
+  } 
+}

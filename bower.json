@@ -1,0 +1,22 @@
+{
+  "name": "es6",
+  "description": "es6 & gulp test",
+  "main": "gulpfile.js",
+  "authors": [
+    "Jaroslaw Kowalczyk <jaroslaw.kowalczyk@codete.co>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "please-wait": "^0.0.5"
+  }
+}
